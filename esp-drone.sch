@@ -1,0 +1,311 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Custom:USB_C_16_PIN U1
+U 1 1 615D4B67
+P 1700 1250
+F 0 "U1" H 1700 1915 50  0000 C CNN
+F 1 "USB_C_16_PIN" H 1700 1824 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1700 550 50  0001 C CNN
+F 3 "" H 1550 1450 50  0001 C CNN
+	1    1700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615D61B2
+P 1200 800
+F 0 "#PWR?" H 1200 550 50  0001 C CNN
+F 1 "GND" V 1200 650 50  0000 R CNN
+F 2 "" H 1200 800 50  0001 C CNN
+F 3 "" H 1200 800 50  0001 C CNN
+	1    1200 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 800  1200 800 
+$Comp
+L power:VBUS #PWR?
+U 1 1 615D6D78
+P 1200 900
+F 0 "#PWR?" H 1200 750 50  0001 C CNN
+F 1 "VBUS" V 1200 1050 50  0000 L CNN
+F 2 "" H 1200 900 50  0001 C CNN
+F 3 "" H 1200 900 50  0001 C CNN
+	1    1200 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615D8E4A
+P 2200 800
+F 0 "#PWR?" H 2200 550 50  0001 C CNN
+F 1 "GND" V 2200 650 50  0000 R CNN
+F 2 "" H 2200 800 50  0001 C CNN
+F 3 "" H 2200 800 50  0001 C CNN
+	1    2200 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 615D9730
+P 2200 900
+F 0 "#PWR?" H 2200 750 50  0001 C CNN
+F 1 "VBUS" V 2200 1050 50  0000 L CNN
+F 2 "" H 2200 900 50  0001 C CNN
+F 3 "" H 2200 900 50  0001 C CNN
+	1    2200 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615DAF0A
+P 2200 1500
+F 0 "#PWR?" H 2200 1250 50  0001 C CNN
+F 1 "GND" V 2200 1350 50  0000 R CNN
+F 2 "" H 2200 1500 50  0001 C CNN
+F 3 "" H 2200 1500 50  0001 C CNN
+	1    2200 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615DB28D
+P 1200 1500
+F 0 "#PWR?" H 1200 1250 50  0001 C CNN
+F 1 "GND" V 1200 1350 50  0000 R CNN
+F 2 "" H 1200 1500 50  0001 C CNN
+F 3 "" H 1200 1500 50  0001 C CNN
+	1    1200 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 615DB9E2
+P 2200 1400
+F 0 "#PWR?" H 2200 1250 50  0001 C CNN
+F 1 "VBUS" V 2200 1550 50  0000 L CNN
+F 2 "" H 2200 1400 50  0001 C CNN
+F 3 "" H 2200 1400 50  0001 C CNN
+	1    2200 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 615DC214
+P 1200 1400
+F 0 "#PWR?" H 1200 1250 50  0001 C CNN
+F 1 "VBUS" V 1200 1550 50  0000 L CNN
+F 2 "" H 1200 1400 50  0001 C CNN
+F 3 "" H 1200 1400 50  0001 C CNN
+	1    1200 1400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2200 1200 2    50   Input ~ 0
+USB_DP
+Wire Wire Line
+	2100 800  2200 800 
+Wire Wire Line
+	2100 900  2200 900 
+Wire Wire Line
+	2100 1100 2200 1100
+Wire Wire Line
+	2100 1200 2200 1200
+Wire Wire Line
+	2100 1400 2200 1400
+Wire Wire Line
+	2100 1500 2200 1500
+Wire Wire Line
+	1300 1400 1200 1400
+Wire Wire Line
+	1300 1500 1200 1500
+Wire Wire Line
+	1300 900  1200 900 
+Text GLabel 1200 1100 0    50   Input ~ 0
+USB_DP
+Text GLabel 2200 1100 2    50   Input ~ 0
+USB_DM
+Text GLabel 1200 1200 0    50   Input ~ 0
+USB_DM
+Wire Wire Line
+	1300 1100 1200 1100
+Wire Wire Line
+	1300 1200 1200 1200
+$Comp
+L power:GND #PWR?
+U 1 1 615DDDE7
+P 2200 1700
+F 0 "#PWR?" H 2200 1450 50  0001 C CNN
+F 1 "GND" V 2200 1550 50  0000 R CNN
+F 2 "" H 2200 1700 50  0001 C CNN
+F 3 "" H 2200 1700 50  0001 C CNN
+	1    2200 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2100 1700 2200 1700
+$Comp
+L Device:R R?
+U 1 1 615DEEA6
+P 2650 1150
+F 0 "R?" H 2720 1196 50  0000 L CNN
+F 1 "5.1K" H 2720 1105 50  0000 L CNN
+F 2 "" V 2580 1150 50  0001 C CNN
+F 3 "~" H 2650 1150 50  0001 C CNN
+	1    2650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615DFA1B
+P 750 1150
+F 0 "R?" H 500 1200 50  0000 L CNN
+F 1 "5.1K" H 500 1100 50  0000 L CNN
+F 2 "" V 680 1150 50  0001 C CNN
+F 3 "~" H 750 1150 50  0001 C CNN
+	1    750  1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1000 2650 1000
+Wire Wire Line
+	1300 1000 750  1000
+$Comp
+L power:GND #PWR?
+U 1 1 615E0950
+P 750 1300
+F 0 "#PWR?" H 750 1050 50  0001 C CNN
+F 1 "GND" V 750 1150 50  0000 R CNN
+F 2 "" H 750 1300 50  0001 C CNN
+F 3 "" H 750 1300 50  0001 C CNN
+	1    750  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615E1544
+P 2650 1300
+F 0 "#PWR?" H 2650 1050 50  0001 C CNN
+F 1 "GND" V 2650 1150 50  0000 R CNN
+F 2 "" H 2650 1300 50  0001 C CNN
+F 3 "" H 2650 1300 50  0001 C CNN
+	1    2650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:CP2102N-A01-GQFN28 U?
+U 1 1 615F0629
+P 4350 2100
+F 0 "U?" H 4350 711 50  0000 C CNN
+F 1 "CP2102N-A01-GQFN28" H 4350 620 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" H 4800 900 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 4400 1350 50  0001 C CNN
+	1    4350 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 1500 0    50   Input ~ 0
+USB_DP
+Text GLabel 3750 1600 0    50   Input ~ 0
+USB_DM
+Wire Wire Line
+	3850 1500 3750 1500
+Wire Wire Line
+	3850 1600 3750 1600
+$Comp
+L Device:R R?
+U 1 1 615F478E
+P 3700 1200
+F 0 "R?" V 3493 1200 50  0000 C CNN
+F 1 "10K" V 3584 1200 50  0000 C CNN
+F 2 "" V 3630 1200 50  0001 C CNN
+F 3 "~" H 3700 1200 50  0001 C CNN
+	1    3700 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 615F6130
+P 3550 1200
+F 0 "#PWR?" H 3550 1050 50  0001 C CNN
+F 1 "VBUS" V 3565 1327 50  0000 L CNN
+F 2 "" H 3550 1200 50  0001 C CNN
+F 3 "" H 3550 1200 50  0001 C CNN
+	1    3550 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 1400 3550 1400
+Wire Wire Line
+	3550 1400 3550 1200
+Connection ~ 3550 1200
+$Comp
+L power:VBUS #PWR?
+U 1 1 615F7312
+P 4250 800
+F 0 "#PWR?" H 4250 650 50  0001 C CNN
+F 1 "VBUS" H 4265 973 50  0000 C CNN
+F 2 "" H 4250 800 50  0001 C CNN
+F 3 "" H 4250 800 50  0001 C CNN
+	1    4250 800 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4350 800 
+Text GLabel 4950 1100 2    50   Input ~ 0
+CP_RTS
+Wire Wire Line
+	4850 1100 4950 1100
+NoConn ~ 4850 1000
+Text GLabel 4950 1200 2    50   Input ~ 0
+CP_RXD
+Text GLabel 4950 1300 2    50   Input ~ 0
+CP_TXD
+Text GLabel 4950 1500 2    50   Input ~ 0
+CP_DTR
+Wire Wire Line
+	4850 1200 4950 1200
+Wire Wire Line
+	4850 1300 4950 1300
+Wire Wire Line
+	4850 1500 4950 1500
+$Comp
+L power:GND #PWR?
+U 1 1 615FA039
+P 4450 3400
+F 0 "#PWR?" H 4450 3150 50  0001 C CNN
+F 1 "GND" V 4455 3272 50  0000 R CNN
+F 2 "" H 4450 3400 50  0001 C CNN
+F 3 "" H 4450 3400 50  0001 C CNN
+	1    4450 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 3400 4450 3400
+NoConn ~ 4850 1600
+NoConn ~ 4850 1700
+NoConn ~ 4850 1400
+NoConn ~ 4850 1900
+NoConn ~ 4850 2000
+NoConn ~ 4850 2200
+NoConn ~ 4850 2300
+NoConn ~ 4850 2400
+NoConn ~ 4850 2600
+NoConn ~ 4850 2700
+NoConn ~ 4850 2800
+NoConn ~ 4850 2900
+NoConn ~ 4850 3000
+NoConn ~ 4850 3100
+NoConn ~ 4850 3200
+$EndSCHEMATC
